@@ -1,21 +1,25 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - entry point
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 (success/correct)
  */
 int main(void)
-{
-int z;
 
-for (z = 48; z <= 57; z++)
 {
-putchar(z);
+char base_16;
+
+for (base_16 = 48; base_16 <= 57; base_16++)
+{putchar(base_16);
 }
-for (z = 97; z <= 102;z++)
+
+for (base_16 = 97 ; base_16 <= 102; base_16++)
 {
-putchar(z)
+putchar(base_16);
 }
-putchar('\n');
+
+putchar ('\n');
+
 return (0);
+
 }

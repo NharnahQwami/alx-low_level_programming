@@ -2,26 +2,27 @@
 /**
  * main - Entry point
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 (Success/correct)
  */
-int main(void)
-{
-int y;
 
-for (y = 97; y <= 122; y++)
+int main(void)
+
 {
-<<<<<<< HEAD
-       if (m == 101 || m == 113)
-=======
-if (y == 101 || y == 113)
->>>>>>> c38d008b18676f16774155151031a0fcc1c46752
+char alphabet;
+
+for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 {
+if (alphabet == 'q')
+continue;
+
+else if (alphabet == 'e')
+continue;
+
+putchar(alphabet);
 }
-else
-{
-putchar(y);
-}
-}
+
 putchar('\n');
+
 return (0);
+
 }

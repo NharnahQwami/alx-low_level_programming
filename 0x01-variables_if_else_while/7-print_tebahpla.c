@@ -2,17 +2,22 @@
 /**
  * main - Entry point
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 (Success/correct)
  */
+
 int main(void)
+
 {
-int s;
-s = 122;
-while (s >= 97)
+char alphabet;
+
+for (alphabet = 122 ; alphabet >= 97; alphabet--)
 {
-putchar(s);
-s--;
+putchar(alphabet);
 }
+
 putchar('\n');
+
 return (0);
+
+
 }

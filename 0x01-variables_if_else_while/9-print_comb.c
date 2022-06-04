@@ -2,21 +2,29 @@
 /**
  * main - Entry point
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 (Success/correct)
  */
 int main(void)
-{
-int k;
 
-for (k = 48; k <= 57; k++)
 {
-putchar(k);
-if (k < 57)
+int number;
+
+
+for (number = 48; number <= 57; number++)
 {
+putchar(number);
+
+if (number == 57)
+{
+break;
+}
+
 putchar(',');
-putchar(' ');
+putchar (' ');
 }
-}
+
 putchar('\n');
+
 return (0);
+
 }
